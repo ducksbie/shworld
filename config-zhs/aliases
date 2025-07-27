@@ -1,0 +1,22 @@
+#
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ls='ls -F'
+alias l='ls -lFa'
+alias la='ls -FA'
+alias ..='cd ..'
+
+alias j='jobs'
+alias h='history'
+
+alias mc='echo "DID YOU MEAN: mv"'
+alias pv='gvim -R -n -'
+
+setopt AUTO_PUSHD
+setopt PUSHD_IGNORE_DUPS
+setopt PUSHD_SILENT
+
+alias d='dirs -v'
+for index_ ({1..9}) alias "$index_"="cd +${index_}"; unset index_
+
